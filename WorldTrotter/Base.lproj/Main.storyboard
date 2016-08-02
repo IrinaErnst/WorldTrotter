@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g9h-5k-KPM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GpW-J2-bcp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,6 +78,7 @@
                             <outletCollection property="gestureRecognizers" destination="kGj-QZ-7UZ" appends="YES" id="olE-Ey-B77"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="N21-eM-FhQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="VpZ-yS-3jQ" id="3MM-ya-i82"/>
@@ -91,9 +92,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="32.5" y="396.5"/>
+            <point key="canvasLocation" x="1302.5" y="-332.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="s52-L8-U4Q">
             <objects>
                 <viewController id="g9h-5k-KPM" sceneMemberID="viewController">
@@ -101,11 +102,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
+                    <tabBarItem key="tabBarItem" title="Item" id="i1t-St-c82"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vc-nv-OWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462.5" y="396.5"/>
+            <point key="canvasLocation" x="1302.5" y="396.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="f62-Jf-NWn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GpW-J2-bcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vfd-69-41r">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="g9h-5k-KPM" kind="relationship" relationship="viewControllers" id="99Z-lQ-1Lf"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RzT-lq-cbB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4GQ-aa-W5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809.5" y="396.5"/>
         </scene>
     </scenes>
 </document>
