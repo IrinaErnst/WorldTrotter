@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D55267353A00E163DD16651898D07BD5433F7912",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "395E747C6104EE6DD9DDDDF84F51EBC62CEBBAFB" : 0,
+    "D55267353A00E163DD16651898D07BD5433F7912" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3D50E246-4998-4CAA-BE04-F55430195EF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "395E747C6104EE6DD9DDDDF84F51EBC62CEBBAFB" : "..",
+    "D55267353A00E163DD16651898D07BD5433F7912" : "WorldTrotter\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WorldTrotter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WorldTrotter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.heroku.com\/travelmatch-capstone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "395E747C6104EE6DD9DDDDF84F51EBC62CEBBAFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SunFloweri\/WorldTrotter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D55267353A00E163DD16651898D07BD5433F7912"
+    }
+  ]
+}
