@@ -12,6 +12,7 @@
 		A7ABE3FA1D424D2C0051990C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ABE3F91D424D2C0051990C /* Assets.xcassets */; };
 		A7ABE3FD1D424D2C0051990C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7ABE3FB1D424D2C0051990C /* LaunchScreen.storyboard */; };
 		A7ABE4071D5011B10051990C /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ABE4061D5011B10051990C /* ConversionViewController.swift */; };
+		A7D9AA751D514E7000143208 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D9AA741D514E7000143208 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A7ABE3FC1D424D2C0051990C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7ABE3FE1D424D2C0051990C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7ABE4061D5011B10051990C /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		A7D9AA741D514E7000143208 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D9AA751D514E7000143208 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		A7ABE3E61D424D2C0051990C = {
 			isa = PBXGroup;
 			children = (
+				A7D9AA741D514E7000143208 /* MapKit.framework */,
 				A7ABE3F11D424D2C0051990C /* WorldTrotter */,
 				A7ABE3F01D424D2C0051990C /* Products */,
 			);
