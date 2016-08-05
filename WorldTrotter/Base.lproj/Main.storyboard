@@ -82,7 +82,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="VpZ-yS-3jQ" id="3MM-ya-i82"/>
-                        <outlet property="textField" destination="ldN-h2-z3Z" id="nad-Qr-nVZ"/>
+                        <outlet property="textField" destination="ldN-h2-z3Z" id="1Ef-bX-DDG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,6 +105,17 @@
             </objects>
             <point key="canvasLocation" x="1302.5" y="396.5"/>
         </scene>
+        <!--Web-->
+        <scene sceneID="9Rz-eZ-dLx">
+            <objects>
+                <viewController id="3VO-gp-aEH" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web" image="Webicon" selectedImage="Webicon" id="XPU-8o-tZo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ph-6G-EfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302.5" y="1245.5"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="f62-Jf-NWn">
             <objects>
@@ -118,6 +129,7 @@
                     <connections>
                         <segue destination="g9h-5k-KPM" kind="relationship" relationship="viewControllers" id="99Z-lQ-1Lf"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RzT-lq-cbB"/>
+                        <segue destination="3VO-gp-aEH" kind="relationship" relationship="viewControllers" id="pX1-6n-SUT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GQ-aa-W5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -128,5 +140,6 @@
     <resources>
         <image name="Converticon" width="49" height="33"/>
         <image name="Mapicon" width="49" height="33"/>
+        <image name="Webicon" width="50" height="50"/>
     </resources>
 </document>

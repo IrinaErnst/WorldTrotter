@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConversionViewController:UIViewController {
+class ConversionViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +58,10 @@ class ConversionViewController:UIViewController {
     }
     
     @IBAction func dissmissKeyboard(sender: AnyObject){
+        print("RESIGN FIRST")
         textField.resignFirstResponder()
     }
+
     
     func updateCelsiusLabel() {
         if let value = celsiusValue {
