@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73D42091D54FD620010146B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D42081D54FD620010146B /* CoreLocation.framework */; };
 		A7ABE3F31D424D2C0051990C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ABE3F21D424D2C0051990C /* AppDelegate.swift */; };
 		A7ABE3F81D424D2C0051990C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7ABE3F61D424D2C0051990C /* Main.storyboard */; };
 		A7ABE3FA1D424D2C0051990C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ABE3F91D424D2C0051990C /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A73D42081D54FD620010146B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A7ABE3EF1D424D2C0051990C /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ABE3F21D424D2C0051990C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7ABE3F71D424D2C0051990C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73D42091D54FD620010146B /* CoreLocation.framework in Frameworks */,
 				A7D9AA791D519CD900143208 /* WebKit.framework in Frameworks */,
 				A7D9AA751D514E7000143208 /* MapKit.framework in Frameworks */,
 			);
@@ -48,6 +51,7 @@
 		A7ABE3E61D424D2C0051990C = {
 			isa = PBXGroup;
 			children = (
+				A73D42081D54FD620010146B /* CoreLocation.framework */,
 				A7D9AA781D519CD900143208 /* WebKit.framework */,
 				A7D9AA741D514E7000143208 /* MapKit.framework */,
 				A7ABE3F11D424D2C0051990C /* WorldTrotter */,

@@ -32,12 +32,21 @@ class MapViewController: UIViewController {
         topConstraint.active = true
         leadingConstraint.active = true
         trailingConstraint.active = true
+        
+        
+        let zoomInButton = UIButton(frame: CGRect(x: 18, y: 70, width: 70, height: 30))
+        zoomInButton.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.5)
+        zoomInButton.setTitle("Zoom In", forState: .Normal)
+        zoomInButton.layer.cornerRadius = 5
+        zoomInButton.addTarget(self, action: #selector(zoomIn), forControlEvents: .TouchUpInside)
+        view.addSubview(zoomInButton)
 
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("MapViewController loaded its view")
+        
+        mapView.showsUserLocation = true
     }
     
     func mapTypeChanged(segControl: UISegmentedControl) {
@@ -51,6 +60,13 @@ class MapViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    @IBAction func zoomIn(sender: UIButton!){
+        print("Button tapped")
+        let userLocation = mapView.userLocation
+        let region = MKCoordinateRegionMakeWithDistance(userLocation.location!.coordinate, 2000, 2000)
+        mapView.setRegion(region, animated: true)
     }
     
 }
