@@ -12,7 +12,6 @@ class ConversionViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ConversionController loaded its view")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,7 +57,6 @@ class ConversionViewController:UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dissmissKeyboard(sender: AnyObject){
-        print("RESIGN FIRST")
         textField.resignFirstResponder()
     }
 
