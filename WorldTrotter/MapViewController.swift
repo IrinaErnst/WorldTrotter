@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapView: MKMapView!
     
@@ -47,6 +47,9 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         mapView.showsUserLocation = true
+        mapView.delegate = self
+        //mapView.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
+    
     }
     
     func mapTypeChanged(segControl: UISegmentedControl) {
@@ -65,8 +68,14 @@ class MapViewController: UIViewController {
     @IBAction func zoomIn(sender: UIButton!){
         print("Button tapped")
         let userLocation = mapView.userLocation
-        let region = MKCoordinateRegionMakeWithDistance(userLocation.location!.coordinate, 2000, 2000)
+        let region = MKCoordinateRegionMakeWithDistance((userLocation.location?.coordinate)!, 2000, 2000)
         mapView.setRegion(region, animated: true)
+    }
+    
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation
+        userLocation: MKUserLocation) {
+        mapView.centerCoordinate = userLocation.location!.coordinate
     }
     
 }

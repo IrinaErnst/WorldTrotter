@@ -21,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		A73D42081D54FD620010146B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A7AAE40E1D5A4BF100FA40F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A7AAE4111D5A4C7E00FA40F4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		A7ABE3EF1D424D2C0051990C /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ABE3F21D424D2C0051990C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7ABE3F71D424D2C0051990C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A7ABE3F71D424D2C0051990C /* Base */,
+				A7AAE40E1D5A4BF100FA40F4 /* en */,
+				A7AAE4111D5A4C7E00FA40F4 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
